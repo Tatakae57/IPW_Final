@@ -1,0 +1,104 @@
+								(1)
+El local Belleza Exterior los ha contratado para que diseñen una aplicación web que, permita al cliente ver sus distintos
+servicios y poder pedir un turno, especificando su nombre y apellido, junto con el mes, día y hora a la que prefiere
+tenerlo y qué servicio requiere.
+
+Debe también permitir al gerente asignar un cliente a un trabajador del personal, dependiendo del servicio que solicita el
+cliente y el servicio que ofrecen los trabajadores. Debe imprimir un PDF con los turnos del día actual para que el gerente
+los gestione, y también debe permitirle especificar si un cliente fue atendido o si estuvo ausente. Debe permitirle también
+el poder imprimir un informe de los turnos y asistencias de un día en específico, en caso de discordias. Por lo tanto, es
+necesario que la aplicación guarde estos datos.
+
+El gerente también debe poder registrar al personal, especificando su nombre, apellido, DNI y servicio que ofrece.
+
+								(2)
+Requisitos Funcionales:
+	- Cliente:
+		* Ver servicios.
+		* Solicitar turno (introducir nombre, apellido, día y servicio).
+
+	- Gerente:
+		* Imprimir PDF con turnos del día.
+		* Marcar a un cliente como atendido o ausente en la aplicación web.
+		* Solicitar informe de un día en específico.
+		* Asignar un cliente al personal dependiendo del servicio que pide y el servicio que un personal ofrece.
+		* Registrar trabajador.
+
+Requisitos No Funcionales:
+	* Multiplataforma.
+	* Almacenar datos del cliente (nombre, apellido, día, servicio y si fue atendido).
+	* Fácil de usar.
+	* No permitir caracteres especiales en el nombre y apellido.
+
+								(5)
+Horas/Hombre: 2006
+Día del proyecto: 96
+
+								(8)
+
+		Casos de equivalencia:
+
+CE-Nombre|Descripción       |Resultado
+---------|------------------|---------
+CE1-nom  |cadena rodrigo123 |Falla
+CE2-nom  |cadena ##rodrigo? |Falla
+CE3-nom  |cadena rodrigo    |Éxito
+CE4-nom  |cadena vacía      |Falla
+
+CE-Apellido|Descripción    |Resultado
+-----------|---------------|---------   
+CE1-ape    |cadena baca12  |Falla
+CE2-ape    |cadena baca//# |Falla
+CE3-ape    |cadena baca    |Éxito
+CE4-ape    |cadena vacía   |Falla
+
+CE-Fecha |Descripción |Resultado                                                                                                
+---------|------------|---------                                                                                                
+CE1-fec  |fecha 29/7  |Falla
+CE2-fec  |fecha 02/8  |Éxito
+CE3-fec  |fecha 31/7  |Éxito
+
+CE-Hora  |Descripción |Resultado
+---------|------------|---------
+CE1-hor  |hora 06:00  |Falla
+CE2-hor  |hora 07:30  |Éxito
+CE3-hor  |hora 14:50  |Éxito
+
+
+		Casos de prueba:
+
+N° Caso|CE       |Nombre     |Apellido |Fecha |Hora   |Resultado Esperado |Salida Esperada
+---------------------------------------------------------------------------------------------------------------------------------
+   1   |CE1-nom  |rodrigo123 |baca12   |29/7  |06:00  |Falla              |El nombre no debe tener caracteres especiales ni números, ni debe estar vacío.
+       |CE1-ape  |           |         |      |       |                   |
+       |CE1-fec  |           |         |      |       |                   |
+       |CE1-hor  |           |         |      |       |                   |
+---------------------------------------------------------------------------------------------------------------------------------
+N° Caso|CE       |Nombre     |Apellido |Fecha |Hora   |Resultado Esperado |Salida Esperada                                           
+---------------------------------------------------------------------------------------------------------------------------------    
+   2   |CE3-nom  |rodrigo    |baca12   |29/7  |06:00  |Falla              |El apellido no debe tener caracteres especiales ni números, ni debe estar vacío. 
+       |CE1-ape  |           |         |      |       |                   |                                                          
+       |CE1-fec  |           |         |      |       |                   |                                                          
+       |CE1-hor  |           |         |      |       |                   |                                                          
+---------------------------------------------------------------------------------------------------------------------------------
+N° Caso|CE       |Nombre     |Apellido |Fecha |Hora   |Resultado Esperado |Salida Esperada                                           
+---------------------------------------------------------------------------------------------------------------------------------    
+   3   |CE3-nom  |rodrigo    |baca     |29/7  |06:00  |Falla              |La fecha no debe ser después de hoy. 
+       |CE3-ape  |           |         |      |       |                   |                                                          
+       |CE1-fec  |           |         |      |       |                   |                                                          
+       |CE1-hor  |           |         |      |       |                   |                                                          
+---------------------------------------------------------------------------------------------------------------------------------
+N° Caso|CE       |Nombre     |Apellido |Fecha |Hora   |Resultado Esperado |Salida Esperada                                         > 
+---------------------------------------------------------------------------------------------------------------------------------  > 
+   4   |CE3-nom  |rodrigo    |baca     |02/8  |06:00  |Falla              |La hora no debe ser inferior a las 7:00 ni superior a las 20:00                      
+       |CE3-ape  |           |         |      |       |                   |                                                        > 
+       |CE2-fec  |           |         |      |       |                   |                                                        > 
+       |CE1-hor  |           |         |      |       |                   |                                                      
+--------------------------------------------------------------------------------------------------------------------------------
+N° Caso|CE       |Nombre     |Apellido |Fecha |Hora   |Resultado Esperado |Salida Esperada                                         > 
+---------------------------------------------------------------------------------------------------------------------------------  > 
+   5   |CE3-nom  |rodrigo    |baca     |02/8  |14:50  |Éxito              |Solicitud de turno enviada. 
+       |CE3-ape  |           |         |      |       |                   |                                                        > 
+       |CE2-fec  |           |         |      |       |                   |                                                        > 
+       |CE3-hor  |           |         |      |       |                   |                                                          
+   

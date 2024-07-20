@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Belleza Exterior: Turnos</title>
+    <link rel="stylesheet" href="src/styles/styles2.css">
+    <script src="src/scripts/script2.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Solicitar Turno</h1>
+    </header>
+    <main>
+      <section id="formulario">
+        <form method="post">
+          
+          <label for="name">Nombre:</label>
+          <br>
+          <input type="text" id="name">
+          <br><br>
+          
+          <label for="lname">Apellido:</label>
+          <br>
+          <input type="text" id="lname">
+          <br><br>
+
+          <label for="date">Fecha:</label>
+          <br>
+          <input type="date" id="date">
+          <br><br>
+
+          <label for="time">Hora:</label>
+          <br>
+          <input type="time" id="time">
+          <br><br>
+
+          <label for="services">Servicio:</label>
+          <br>
+          <select id="services">
+            <option value="cabello">Cabello</label>
+            <option value="piel">Cuidado de piel</label>
+            <option value="pedicura">Pedicura</label>
+            <option value="depilacion">Depilación</label>
+          </select>
+          <br><br>
+          <input type="submit" onclick="verificarDatos()">
+        
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

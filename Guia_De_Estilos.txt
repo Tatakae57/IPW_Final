@@ -1,0 +1,71 @@
+index.html:
+	- Tipografía: Sans.
+	- Idioma: Español.
+
+	- Estructura:
+		* Header
+		* Main
+		* Footer
+			
+	- Colores:
+		* Header: 
+			- Texto: Blanco.
+			- Fondo: Morado.
+		* Main:
+			- Texto: Negro.
+			- Fondo: #e0e0e0 (gris claro).
+		* Footer:
+			- Texto: Blanco.
+			- Fondo: Morado.
+
+	- Imágenes:
+		* Ancho: 400px.
+		* Largo: 350px.
+		* Ruta: src.
+			
+	- Rellenos y márgenes:
+		* Cuerpo:
+			- Relleno: 0.
+			- Margen: 0.
+		* Header:
+			Relleno: 10px.
+		* Main:
+			Relleno: 10px.
+			Secciones: 20px.
+		* Footer:
+			Relleno: 10px.
+	
+	- Alineamientos de texto
+		* Header: Centro.
+		* Footer: Centro.
+
+turnos.html:
+	- Tipografía: Sans.
+	- Idioma: Español.
+
+	- Estructura:
+		* Header
+		* Formulario
+			
+	- Colores:
+		* Cuerpo:
+			- Fondo: #505050 (gris oscuro).
+		* Header: 
+			- Texto: Blanco.
+			- Fondo: Morado.
+		* Formulario:
+			- Texto: Negro.
+			- Fondo: Blanco.
+
+	- Rellenos y márgenes:
+		* Cuerpo:
+			- Relleno: 0.
+			- Margen: 0.
+		* Header:
+			Relleno: 10px.
+		* Formulario:
+			- Relleno: 30px.
+
+	- Alineamientos:
+		* Header: Centro.
+		* Formulario: Centro.
