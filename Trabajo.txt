@@ -1,7 +1,7 @@
 								(1)
 El local Belleza Exterior los ha contratado para que diseñen una aplicación web que, permita al cliente ver sus distintos
 servicios y poder pedir un turno, especificando su nombre y apellido, junto con el mes, día y hora a la que prefiere
-tenerlo y qué servicio requiere.
+tenerlo y qué servicio requiere. La hora no debe ser menor a las 7:00 ni mayor a las 20:00.
 
 Debe también permitir al gerente asignar un cliente a un trabajador del personal, dependiendo del servicio que solicita el
 cliente y el servicio que ofrecen los trabajadores. Debe imprimir un PDF con los turnos del día actual para que el gerente
