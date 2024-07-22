@@ -10,13 +10,13 @@ index.html:
 	- Colores:
 		* Header: 
 			- Texto: Blanco.
-			- Fondo: Morado.
+			- Fondo: Rosa.
 		* Main:
 			- Texto: Negro.
 			- Fondo: #e0e0e0 (gris claro).
 		* Footer:
 			- Texto: Blanco.
-			- Fondo: Morado.
+			- Fondo: Rosa.
 
 	- Imágenes:
 		* Ancho: 400px.
@@ -52,10 +52,10 @@ turnos.html:
 			- Fondo: #505050 (gris oscuro).
 		* Header: 
 			- Texto: Blanco.
-			- Fondo: Morado.
+			- Fondo: Rosa.
 		* Formulario:
 			- Texto: Negro.
-			- Fondo: Blanco.
+			- Fondo: Rosa.
 
 	- Rellenos y márgenes:
 		* Cuerpo:
@@ -69,3 +69,5 @@ turnos.html:
 	- Alineamientos:
 		* Header: Centro.
 		* Formulario: Centro.
+
+- Razones: El rosa transmite feminidad y delicadeza, y el blanco profesionalidad.
