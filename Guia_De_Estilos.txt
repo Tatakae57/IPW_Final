@@ -21,7 +21,7 @@ index.html:
 	- Imágenes:
 		* Ancho: 400px.
 		* Largo: 350px.
-		* Ruta: src.
+		* Ruta: src/images
 			
 	- Rellenos y márgenes:
 		* Cuerpo:
